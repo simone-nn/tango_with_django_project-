@@ -1,3 +1,4 @@
+from django.conf.global_settings import MEDIA_URL
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -8,4 +9,5 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'rango/about.html')
+    context_dict = {'boldmessage': 'Simone'}
+    return render(request, 'rango/about.html', context=context_dict)
