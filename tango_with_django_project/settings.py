@@ -133,3 +133,5 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+s = MEDIA_URL
+print(s)
